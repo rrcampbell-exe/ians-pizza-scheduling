@@ -1,26 +1,48 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
   return (
-    <div className='cluster-container'>
-      <div className='cluster'>
-        <h1>Madison</h1>
-        <button id='frances'>Frances</button>
-        <button id='state'>State</button>
-        <button id='garver'>Garver</button>
+    <>
+      <div className='logo-container'>
+        <h1>Ian's Pizza Scheduling</h1>
       </div>
-      <div className='cluster'>
-        <h1>Milwaukee</h1>
-        <button id='north-ave'>North</button>
-        <button id='juneau'>Juneau</button>
-        <button id='story-hill'>Story Hill</button>
+      <div className='cluster-container'>
+        <div className='cluster'>
+          <h2>Madison</h2>
+          <Link to='/frances'>
+            <button>Frances</button>
+          </Link>
+          <Link to='/state'>
+            <button>State St</button>
+          </Link>
+          <Link to='/garver'>
+            <button>Garver</button>
+          </Link>
+        </div>
+        <div className='cluster'>
+          <h2>Milwaukee</h2>
+          <Link to='/north'>
+            <button>North</button>
+          </Link>
+          <Link to='juneau'>
+            <button>Juneau</button>
+          </Link>
+          <Link to='story-hill'>
+            <button>Story Hill</button>
+          </Link>
+        </div>
+        <div className='cluster'>
+          <h2>Seattle</h2>
+          <Link to='fremont'>
+            <button>Fremont</button>
+          </Link>
+          <Link to='capitol-hill'>
+            <button>Capitol Hill</button>
+          </Link>
+        </div>
       </div>
-      <div className='cluster'>
-        <h1>Seattle</h1>
-        <button id='fremont'>Fremont</button>
-        <button id='capitol-hill'>Capitol Hill</button>
-      </div>
-    </div>
+    </>
   )
 }
 
