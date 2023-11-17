@@ -7,11 +7,6 @@ body {
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 button {
   display: inline-block;
   padding: 12px 2.8rem;
@@ -29,6 +24,11 @@ button:hover {
   filter: brightness(1.4);
   z-index: 99;
   border: 2px solid white;
+  cursor: pointer;
+}
+
+.logo-container {
+  text-align: center;
 }
 
 .cluster-container {
