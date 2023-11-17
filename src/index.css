@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: work sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 2.8rem;
+  background: #f22132;
+  border-radius: 51px;
+  padding: 10px 40px;
+  margin-top: 10px;
+  transition: all .4s;
+  text-align: center;
+  color: white;
+  border: 2px solid #f22132;
+}
+
+button:hover {
+  filter: brightness(1.4);
+  z-index: 99;
+  border: 2px solid white;
+}
+
+.cluster-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+}
